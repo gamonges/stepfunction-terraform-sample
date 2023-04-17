@@ -1,0 +1,13 @@
+.DS_Store
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Archived Lambda
+archive.zip
+
+terraform.tfvars
