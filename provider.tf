@@ -1,7 +1,3 @@
-variable "access_key" {}
-variable "secret_key" {}
-variable "region" {}
-
 terraform {
   required_version = "~> 1.4.0"
   required_providers {
@@ -13,9 +9,7 @@ terraform {
 }
 # AWS プロバイダの設定
 provider "aws" {
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
-  region = "${var.region}"
+  region = "ap-northeast-1"
 }
 
 provider "archive" {}
